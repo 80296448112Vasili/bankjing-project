@@ -1,0 +1,554 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    min-width: 1400px;
+    height: 900px;
+}
+.bankApp{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.first_page{
+    display: block;
+    position: relative;
+    width: 600px;
+    margin: 200px auto;
+}
+.logoBank_large{
+    position: absolute;
+    width: 100%;
+}
+
+.entrance_btn{
+    position: relative;
+    margin: 300px 200px auto 200px;
+    width: 200px;
+    height: 100px;
+    border-style: none;
+    background-color:transparent ;
+    font-size: 35px;
+    color: rgb(81, 121, 81);
+    font-weight: 800;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+.entrance_btn:hover{
+    scale: 120%;
+    color: rgb(29, 59, 29);
+    cursor:pointer;
+}
+
+.second_page{
+    display:none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    background-image: url(/public/images/safe_deposit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registr{
+   position: absolute;
+   width: 400px;
+   height: 800px;
+   border: 3px solid rgb(17, 46, 16);
+   border-radius: 20px;
+   margin: 20px 600px;
+   background-color: rgba(178, 243, 178, 0.534);
+
+} 
+.form_title{
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(31, 63, 31);
+    font-size: 40px;
+}
+
+.inputName{
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+
+
+}
+
+.label_name{
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    font-weight: 800;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(31, 63, 31);
+    font-size: 20px;
+} 
+.registr_name{
+    display: block;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-top: 3px;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(31, 63, 31);
+    font-size: 20px;  
+   border: 3px solid rgb(31, 63, 31);
+}
+
+.inputPass{
+    margin: 50px auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+
+
+}
+
+.label_pass{
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-weight: 800;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(31, 63, 31);
+    font-size: 20px;
+} 
+.regist_pass{
+    display: block;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 800; 
+    border: 3px solid rgb(31, 63, 31);
+}
+
+
+
+
+.input_btn{
+cursor:pointer;
+display: block;
+width: 200px;
+height: 60px;
+position: relative;
+margin: 10px auto;
+text-align: center;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-size: 25px;
+font-weight: 800; 
+border: 3px solid rgb(31, 63, 31);
+color: rgb(81, 121, 81) ;
+transition: all;
+transition-duration: 0.3s;
+}
+
+.input_btn:hover{
+    scale:120% ;
+    color: rgb(31, 63, 31) ;
+    }
+
+.error_password{
+    display: none;
+position: absolute;
+margin: -200px 50px ;
+width: 300px;
+height: 100px;
+background-color: rgb(248, 136, 136);
+border: 3px solid rgb(250, 2, 2);
+border-radius: 10px;
+z-index: 100;
+
+
+}
+
+.error_text{
+    text-align: center;
+    color: rgb(250, 2, 2) ;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 20px;
+    font-weight: 800; 
+}
+
+.error_btn{
+    position: absolute;
+    cursor:pointer;
+    width: 50px;
+    height: 30px;
+    margin: 0px 120px;
+    border: 2px solid red;
+    background-color: rgb(181, 230, 250);
+    color: rgb(250, 75, 75);
+}
+
+.bank_page{
+    display:none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
+    background: linear-gradient(70deg, rgb(140, 247, 163),70% ,rgb(240, 243, 241) ); 
+
+}
+
+
+
+.head{
+    position: absolute;
+    margin: 50px 0px 0px 500px;
+    width: 800px;
+    height: 50px;
+    text-align:start;
+    font-size: 35px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47);
+}
+
+.money_image{
+    position: absolute;
+    width: 150px;
+    margin: 300px 0px 0px 20px;
+
+}
+
+.logoBank_min{
+    position: absolute;
+    width: 300px;
+    margin: 10px 0px 0px 10px; 
+}
+
+.current_container{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin: 200px 100px 0px 200px;
+    width: 1200px;
+    height: 500px;
+}
+.current_transactions{
+    position: relative;
+    width: 650px;
+    height: 490px;
+    border: 5px solid green;
+    border-radius: 10px;
+    background: linear-gradient(70deg, rgb(240, 243, 241),70% , rgb(140, 247, 163)); 
+    font-size: 20px;
+    font-weight: bolder;
+    overflow-x: scroll;
+}
+.account_actions{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    width: 450px;
+    height: 100%;
+    
+}
+
+.account_actions_transfer{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    border: 5px solid green;
+    border-radius: 10px;
+    background: linear-gradient(70deg, rgb(240, 243, 241),70% , rgb(140, 247, 163)); 
+}
+.account_actions_credit{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    border: 5px solid green;
+    border-radius: 10px;
+    background: linear-gradient(70deg, rgb(240, 243, 241),70% , rgb(140, 247, 163)); 
+}
+.account_actions_close{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    border: 5px solid green;
+    border-radius: 10px;
+    background: linear-gradient(70deg, rgb(240, 243, 241),70% , rgb(140, 247, 163)); 
+}
+.info__text{
+    position: absolute;
+    margin: 150px 0px 0px 250px;
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47);
+
+}
+
+.info__date{
+    position: absolute;
+    margin: 175px 0px 0px 250px;
+    font-size: 20px;
+    color: rgb(41, 70, 47); 
+}
+
+.account_actions_title{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47);  
+}
+
+.payeeName{
+    margin: -10px 0px 0px 10px;
+}
+
+.label_payeename{
+    display: inline-block;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47); 
+}
+
+.payee_name{
+    display: inline-block;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47); 
+    
+}
+
+.inputSumm{
+    margin: 10px 0px 0px 10px;  
+}
+
+.label_payeesumm{
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47); 
+}
+
+.input_summ{
+    display: inline-block;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47); 
+    
+}
+
+.inp_btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left:390px;
+    bottom:40px ;
+    background-image: url(/public/images/button_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(147, 247, 147) ;
+}
+.inp_btn:hover{
+    background-color: rgb(16, 107, 16) ;
+    scale: 110%;
+}
+
+.clientName{
+    margin: -10px 0px 0px 10px;  
+}
+
+.label_client{
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47); 
+}
+
+.client_name{
+    display: inline-block;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47); 
+    
+}
+
+.inputPassword{
+    position: relative;
+    margin: 10px 0px 0px 10px;  
+}
+.label_inputpassword{
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47); 
+}
+
+.input_password{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(41, 70, 47); 
+    
+}
+
+.typeDate{
+    border-bottom:1px solid rgb(33, 61, 33) ;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.transactions__type--deposit{
+    display: block;
+    width: 150px;
+    color: rgb(88, 88, 240);
+}
+.transactions__type--withdrawal{
+    display: block;
+    width: 150px;
+    color: rgb(247, 82, 82);
+}
+
+.transactions__date{
+    display: block;
+    width: 150px;
+    color: rgb(36, 151, 41);   
+}
+.transactions__value{
+    display: block;
+}
+
+.total__value{
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    width: 650px;
+    height: 40px;
+    margin: 720px 0 0 230px;
+}
+.total__value-in{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    border: 5px solid green;
+    border-radius: 5px;
+    background: linear-gradient(70deg, rgb(240, 243, 241),70% , rgb(140, 247, 163)); 
+    font-size: 20px;
+    font-weight: bolder; 
+    color: rgb(88, 88, 240)
+}
+.total__value-in-number{
+    color: black ;   
+}
+
+.total__value-out{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    border: 5px solid green;
+    border-radius: 5px;
+    background: linear-gradient(70deg, rgb(240, 243, 241),70% , rgb(140, 247, 163)); 
+    font-size: 20px;
+    font-weight: bolder; 
+    color: rgb(247, 82, 82);
+}
+.total__value-out-number{
+    color: black ;   
+}
+
+.total__balans{
+    position:absolute;
+    width: 430px;
+    height: 40px;
+    margin: 130px 0 0 930px;
+    border: 5px solid green;
+    border-radius: 5px;
+    background: linear-gradient(70deg, rgb(240, 243, 241),70% , rgb(140, 247, 163));  
+    font-size: 20px;
+    font-weight: bolder; 
+}
+.total__balans{
+    font-size: 20px;
+    font-weight: bolder; 
+    color: rgb(88, 88, 240) ;
+
+}
+.total__balans-number{
+    color: black ;   
+}
+
+
+.send_input_error{
+    display: none;
+position: absolute;
+margin: 260px 0 0 1000px;
+width: 300px;
+height: 200px;
+background-color: rgb(248, 136, 136);
+border: 3px solid rgb(250, 2, 2);
+border-radius: 10px;
+z-index: 100;
+
+
+}
+
+.send_inpu_error-text{
+    text-align: center;
+    color: rgb(250, 2, 2) ;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 20px;
+    font-weight: 800; 
+}
+
+.send_input_error-btn{
+    position: absolute;
+    cursor:pointer;
+    width: 50px;
+    height: 30px;
+    margin: 0px 120px;
+    border: 2px solid red;
+    background-color: rgb(181, 230, 250);
+    color: rgb(250, 75, 75);
+}
+
+#refused_loan{
+    margin: 300px 0 0 1000px;
+
+}
+
+#account_close{
+    margin: 500px 0 0 1000px;
+
+}
+
+
+
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect"
+     href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style-bank_app.css">
+</head>
+<body>
+    <main class="bankApp">
+        <div class="first_page" >
+         <img class="logoBank_large" src="/public/images/Logo_bank_111.png" alt="logo bank">
+         <button class="entrance_btn">ВОЙТИ В БАНК</button>
+        </div>
+
+        <div class="second_page">
+            <div class="registr" >
+            <form action="#" class="registr_form" name="form">
+            <h1 class="form_title">Введите ваши данные</h1>
+
+             <div class="inputName">
+            <label for="name" class="label_name">ФАМИЛИЯ</label>
+            <input type="text" class="registr_name" name="surname" id="surname" required>
+            </div>
+
+            <div class="inputName">
+            <label for="name" class="label_name">ИМЯ</label>
+            <input type="text" class="registr_name" name="name" id="name" required>
+            </div>
+        
+            <div class="inputName">
+            <label for="name" class="label_name">ОТЧЕСТВО</label>
+            <input type="text" class="registr_name" name="patronymic" id="patronymic" required>
+            </div>
+
+            <div class="inputPass">
+            <label for="name" class="label_pass" >ВВЕДИТЕ ПАРОЛЬ</label>
+            <input type="password" class="regist_pass" name="password" id="pass" required>
+            </div>
+
+            <div class="sendButton">
+            <button type="submit" class="input_btn">ОТПРАВИТЬ</button>  
+
+            <div class="error_password">
+                <p class="error_text">НЕВЕРНЫЙ ПАРОЛЬ</p>
+            <button  class="error_btn">OK</button> 
+            </div>
+            </div>
+        </form>
+    </div>
+
+        </div>
+       
+
+    <div class="bank_page">
+        <img class="logoBank_min" src="/public/images/Logo_bank_114.png" alt="logo bank">
+        <img class="money_image" src="/public/images/pngwing.com (8).png" alt="money">
+        <header class="head">Здравствуйте!</header>
+
+           <div class="info">
+            <div class="info__text">Текущий баланс</div> 
+            <div class="info__date"></div>    
+        </div>
+
+    <div class="current_container">
+
+    <div class="current_transactions"></div>
+
+    <div class="account_actions">
+
+    <div class="account_actions_transfer">
+        <h2 class="account_actions_title">Перевести деньги</h2>
+        <form action="#" class="transfer_form" name="transfer">
+            <div class="payeeName">
+                <label for="payeename" class="label_payeename">Имя получателя</label>
+                <input type="text" class="payee_name" name="payeename" id="payeename" required>
+                </div>
+    
+                <div class="inputSumm">
+                <label for="payeesumm" class="label_payeesumm" >Сумма</label>    
+                <input type="number" class="input_summ" name="payeesumm" id="payeesumm" required>
+                </div>
+
+                <button type="submit"  class="inp_btn" id="payee_btn" ></button>
+        </form>
+    </div>
+    <div class="account_actions_credit">
+        <h2 class="account_actions_title">Запросить займ</h2>
+        <form action="#" class="credit_form" name="credit">
+            <div class="inputSumm">
+                <label for="payeesumm" class="label_payeesumm" >Сумма</label>    
+                <input type="number" class="input_summ" name="creditsumm" id="creditsumm" required>
+                </div>
+
+                <button type="submit"  class="inp_btn" id="credit_btn"></button>
+        </form>
+    </div>
+    <div class="account_actions_close">
+        <h2 class="account_actions_title">Закрыть счёт</h2>
+        <form action="#" class="close_form" name="close">
+            <div class="clientName">
+                <label for="clientename" class="label_client">Подтв. Ф.И.О.</label>
+                <input type="text" class="client_name" name="clientename" id="clientename" required>
+                </div>
+    
+                <div class="inputPassword">
+                <label for="inputpassword" class="label_inputpassword" >Подтв. PIN</label>    
+                <input type="password" class="input_password" name="inputpassword" id="inputpassword" required>
+                </div>
+
+                <button type="submit"  class="inp_btn" id="close_btn"></button>
+        </form>
+    </div>
+    
+    </div>
+    </div> 
+       <div class="total__value">
+       <div class="total__value-in">Сумма поступлений: <span class="total__value-in-number"></span></div>
+       <div class="total__value-out">Сумма списаний: <span class="total__value-out-number"></span></div>   
+       </div>   
+       <div class="total__balans">Доступный балланс: <span class="total__balans-number"></span></div> 
+
+       <div class="send_input_error" id="recipient_notfound" >
+        <p  class="send_inpu_error-text"  id="recipient_notfound_text" >ПОЛЬЗОВАТЕЛЬ НЕ НАЙДЕН<br> ИЛИ <br> НЕДОСТАТОЧНО СРЕДСТВ НА СЧЁТЕ</p>
+    <button class="send_input_error-btn"  id="recipient_notfound_btn" >OK</button> 
+    </div>
+
+
+    <div class="send_input_error" id="insufficient_funds" >
+        <p class="send_inpu_error-text" id="insufficient_funds_text" >ВВЕДИТЕ КОРРЕКТНУЮ СУММУ </p>
+    <button class="send_input_error-btn" id="insufficient_funds_btn" >OK</button> 
+    </div>
+
+
+     <div class="send_input_error" id="refused_loan" >
+        <p class="send_inpu_error-text" id="refused_loan_text" >В ЗАЙМЕ ОТКАЗАНО</p>
+    <button class="send_input_error-btn" id="refused_loan_btn" >OK</button> 
+    </div>
+
+
+    <div class="send_input_error" id="account_close" >
+        <p class="send_inpu_error-text" id="account_close_text" >ВВЕДЕНЫ НЕВЕРНЫЕ <br> ДАННЫЕ</p>
+    <button class="send_input_error-btn" id="account_close_btn" >OK</button> 
+    </div>
+    
+    </div>
+      
+   
+    </main>
+   
+
+   
+
+    
+<script src="/script-bank_app.js"></script>
+</body>
+</html>
